@@ -5,4 +5,6 @@ limpar_metadados.py
 *.log
 *.tmp
 __pycache__/
-.ipynb_checkpoints/o/
+.ipynb_checkpoints/
+.quarto/xref
+.quarto/xref/
