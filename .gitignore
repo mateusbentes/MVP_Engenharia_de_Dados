@@ -1,0 +1,8 @@
+# Ignorar o script limpar_metadados.py
+limpar_metadados.py
+
+# Outros arquivos e diretórios que você deseja ignorar
+*.log
+*.tmp
+__pycache__/
+.ipynb_checkpoints/o/
