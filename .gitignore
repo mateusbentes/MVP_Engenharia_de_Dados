@@ -1,6 +1,9 @@
 # Ignorar o script limpar_metadados.py
 limpar_metadados.py
 
+# Ignorar o script limparassaidas.py
+limparassaidas.py
+
 # Outros arquivos e diretórios que você deseja ignorar
 *.log
 *.tmp
@@ -8,3 +11,7 @@ __pycache__/
 .ipynb_checkpoints/
 .quarto/xref
 .quarto/xref/
+MVP_Engenharia_de_Dados.aux
+MVP_Engenharia_de_Dados.log
+MVP_Engenharia_de_Dados_files
+MVP_Engenharia_de_Dados_files/
