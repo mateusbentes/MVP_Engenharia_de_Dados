@@ -413,9 +413,12 @@ duas camadas principais: Data Lake e Data Warehouse .
 \begin{VerbatimWithBreaks}
 I. Data Lake:  
     O Data Lake  foi utilizado como repositório central para armazenar os dados brutos e transformados. Ele permite armazenar grandes volumes de dados em formatos diversos (estruturados, semi-estruturados e não estruturados).
-    Os dados foram salvos no formato Delta Lake (dbfs:/bluesky_data/bluesky_posts_clean), que oferece:
+    Os dados foram salvos no formato Delta Lake (dbfs:/bluesky\textunderscore data/bluesky\textunderscore posts\textunderscore clean), que oferece:
+    
         Suporte a operações ACID.
+        
         Schema enforcement e evolution.
+        
         Otimização para consultas analíticas.
          
     Essa abordagem garante que os dados estejam disponíveis para futuras transformações ou análises sem perder a flexibilidade.
@@ -896,9 +899,9 @@ dataset. Os principais achados foram:
 \begin{VerbatimWithBreaks}
 Coluna text (conteúdo da postagem):  Menos de 1% dos registros apresentavam valores ausentes. Esses registros foram removidos para evitar inconsistências na análise. 
 
-Coluna created_at:  Todos os registros continham valores válidos, permitindo uma análise temporal robusta. No entanto, foi necessário padronizar o formato de data/hora e converter para o fuso horário de São Paulo para garantir coerência. 
+Coluna created\textunderscore at:  Todos os registros continham valores válidos, permitindo uma análise temporal robusta. No entanto, foi necessário padronizar o formato de data/hora e converter para o fuso horário de São Paulo para garantir coerência. 
 
-Coluna predicted_language:  O idioma das postagens foi inferido utilizando o modelo FastText. Algumas postagens não puderam ter o idioma identificado e foram classificadas como "unknown". Essas postagens foram excluídas da análise, pois o foco estava em postagens em inglês. 
+Coluna predicted\textunderscore language:  O idioma das postagens foi inferido utilizando o modelo FastText. Algumas postagens não puderam ter o idioma identificado e foram classificadas como "unknown". Essas postagens foram excluídas da análise, pois o foco estava em postagens em inglês. 
  
 
 Verificação de Inconsistências nos Dados 
