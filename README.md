@@ -73,11 +73,7 @@ quarto render MVP_Engenharia_de_Dados.ipynb --to latex
 
 ```
 xelatex MVP_Engenharia_de_Dados.tex
-```               
-
-4. Versão Final:
-- Inclua as versões .tex e .pdf no repositório para referência.
-         
+```         
 
 ### Observações Importantes
 
