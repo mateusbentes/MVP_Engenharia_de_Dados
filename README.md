@@ -53,6 +53,10 @@ Fluxo de Trabalho Recomendado
 
 - Use uma ferramenta como o Quarto para exportar o notebook limpo para LaTeX.
 
+```
+quarto render MVP_Engenharia_de_Dados.ipynb --to latex
+```
+
 - Abra o arquivo MVP_Engenharia_de_Dados.tex em um editor de texto ou LaTeX.
 
 - Ajuste problemas como:
@@ -66,10 +70,6 @@ Fluxo de Trabalho Recomendado
 - Adicione pacotes LaTeX ou ajustes no preâmbulo, se necessário, para melhorar a formatação.
 
 - Compile o arquivo .tex para gerar o PDF final:
-
-```
-quarto render MVP_Engenharia_de_Dados.ipynb --to latex
-```
 
 ```
 xelatex MVP_Engenharia_de_Dados.tex
