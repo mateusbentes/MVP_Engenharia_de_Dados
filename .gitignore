@@ -1,9 +1,3 @@
-# Ignorar o script limpar_metadados.py
-limpar_metadados.py
-
-# Ignorar o script limparassaidas.py
-limparassaidas.py
-
 # Outros arquivos e diretórios que você deseja ignorar
 *.log
 *.tmp
