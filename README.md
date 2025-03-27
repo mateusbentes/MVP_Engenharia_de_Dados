@@ -51,8 +51,25 @@ Fluxo de Trabalho Recomendado
 
 3. Exportação para LaTeX e PDF:
 
-- Exporte o notebook limpo para LaTeX usando uma ferramenta como Pandoc ou o próprio Databricks.
+- Use uma ferramenta como o Quarto para exportar o notebook limpo para LaTeX.
+
+- Abra o arquivo MVP_Engenharia_de_Dados.tex em um editor de texto ou LaTeX.
+
+- Ajuste problemas como:
+
+	- Quebras de linha em blocos de código ou texto longo.
+	
+	- Formatação de caracteres especiais (ex.: subtraços _, cifrões $, etc.).
+	
+	- Alinhamento de tabelas ou figuras.
+
+- Adicione pacotes LaTeX ou ajustes no preâmbulo, se necessário, para melhorar a formatação.
+
 - Compile o arquivo .tex para gerar o PDF final:
+
+```
+quarto render MVP_Engenharia_de_Dados.ipynb --to latex
+```
 
 ```
 xelatex MVP_Engenharia_de_Dados.tex
