@@ -97,10 +97,10 @@ pdflatex MVP_Engenharia_de_Dados.tex
 makeindex MVP_Engenharia_de_Dados.idx
 ```
 
-	- O comando makeindex gera os arquivos:
+- O comando makeindex gera os arquivos:
 
-        	- MVP_Engenharia_de_Dados.ind: Contém o índice formatado.
-        	- MVP_Engenharia_de_Dados.ilg: Contém logs e mensagens de erro (útil para depuração).
+	- MVP_Engenharia_de_Dados.ind: Contém o índice formatado.
+	- MVP_Engenharia_de_Dados.ilg: Contém logs e mensagens de erro (útil para depuração).
 
 - Compile o arquivo .tex para gerar o PDF final:
 
@@ -108,7 +108,7 @@ makeindex MVP_Engenharia_de_Dados.idx
 pdflatex MVP_Engenharia_de_Dados.tex
 ```         
 
-    - Para garantir que todas as referências cruzadas, índices e tabelas estejam corretamente atualizadas, compile o arquivo .tex pelo menos duas vezes após o uso do makeindex.
+	- Para garantir que todas as referências cruzadas, índices e tabelas estejam corretamente atualizadas, compile o arquivo .tex pelo menos duas vezes após o uso do makeindex.
 
 ### Observações Importantes
 
