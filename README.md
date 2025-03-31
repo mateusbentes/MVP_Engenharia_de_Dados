@@ -108,7 +108,7 @@ makeindex MVP_Engenharia_de_Dados.idx
 pdflatex MVP_Engenharia_de_Dados.tex
 ```         
 
-	- Para garantir que todas as referências cruzadas, índices e tabelas estejam corretamente atualizadas, compile o arquivo .tex pelo menos duas vezes após o uso do makeindex.
+- Para garantir que todas as referências cruzadas, índices e tabelas estejam corretamente atualizadas, compile o arquivo .tex pelo menos duas vezes após o uso do makeindex.
 
 ### Observações Importantes
 
