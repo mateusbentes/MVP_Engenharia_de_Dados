@@ -94,6 +94,7 @@
     breaklines=true,       % Habilita quebra de linha
     commandchars=\\\{\}   % Mantém a interpretação de caracteres especiais
 }
+\usepackage{makeidx}
 \newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
 \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
 \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
@@ -209,11 +210,12 @@
   pdfcreator={LaTeX via pandoc}}
 
 
-\author{}
-\date{}
+\author{Mateus Sales Bentes}
+\date{31-03-1997}
+
+\makeindex
 
 \begin{document}
-
 
 Instalando as bibbliotecas necessárias.
 
@@ -227,7 +229,7 @@ Instalando as bibbliotecas necessárias.
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Objetivo
+  Objetivo \index{Objetivo}
 \end{enumerate}
 
 O projeto atendeu ao objetivo principal de identificar e classificar
@@ -257,7 +259,7 @@ Perguntas da Pesquisa
 \setcounter{enumi}{1}
 \tightlist
 \item
-  Coleta de Dados
+  Coleta de Dados \index{Coleta de Dados}
 \end{enumerate}
 
 Os dados utilizados neste estudo foram obtidos a partir do dataset ``Two
@@ -294,7 +296,7 @@ interação com a API do Bluesky.
 \setcounter{enumi}{2}
 \tightlist
 \item
-  Modelagem
+  Modelagem \index{Modelagem}
 \end{enumerate}
 
 Para a organização e estruturação dos dados, foi adotado o Esquema
@@ -367,7 +369,7 @@ classificação de postagens na plataforma Bluesky.
 \setcounter{enumi}{3}
 \tightlist
 \item
-  Carga
+  Carga \index{Carga}
 \end{enumerate}
 
 A carga de dados é uma etapa crítica no pipeline de processamento, pois
@@ -873,7 +875,7 @@ Agora pode-se rodar queries SQL no Databricks para analisar os dados:
 \setcounter{enumi}{4}
 \tightlist
 \item
-  Análise
+  Análise \index{Análise}
 \end{enumerate}
 
 \begin{enumerate}
@@ -946,7 +948,7 @@ Respostas Obtidas e Discussão
  
 \end{VerbatimWithBreaks}
 
-I. Distribuição Temporal das Postagens
+  I. Distribuição Temporal das Postagens
 
 A análise da distribuição temporal revelou padrões claros de atividade
 dos usuários:
@@ -962,13 +964,7 @@ Esses padrões podem ser úteis para estratégias de marketing e
 engajamento, permitindo que campanhas sejam direcionadas para os
 momentos de maior visibilidade.
 
-\begin{enumerate}
-\def\labelenumi{\Roman{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  Principais Temas Discutidos
-\end{enumerate}
+  II. Principais Temas Discutidos
 
 A classificação automática das postagens revelou os seguintes temas
 predominantes:
@@ -984,13 +980,7 @@ Outros temas:  A categoria "Outros" inclui postagens que não se enquadram nas c
  
 \end{VerbatimWithBreaks}
 
-\begin{enumerate}
-\def\labelenumi{\Roman{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  Tendência de Postagens sobre Guerra
-\end{enumerate}
+  III. Tendência de Postagens sobre Guerra
 
 A análise temporal das postagens sobre ``Guerra'' revelou insights
 importantes:
@@ -1002,13 +992,7 @@ Tendência geral:  Apesar dos picos, o volume médio de postagens sobre "Guerra"
  
 \end{VerbatimWithBreaks}
 
-\begin{enumerate}
-\def\labelenumi{\Roman{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  Conclusão
-\end{enumerate}
+  III. Conclusão
 
 A análise dos dados permitiu identificar padrões claros de comportamento
 dos usuários e os principais temas discutidos na plataforma. Observamos
@@ -1040,7 +1024,7 @@ Estudo de Caso:  Realize um estudo de caso focado em um evento específico (ex.:
  
 \end{VerbatimWithBreaks}
 
-Autoavaliação
+Autoavaliação \index{Autoavaliação}
 
 O objetivo deste trabalho foi analisar e classificar postagens do
 Bluesky em diferentes temas, utilizando técnicas de processamento de
@@ -1060,7 +1044,7 @@ confiabilidade das análises. As etapas de pré-processamento foram
 bem-sucedidas em lidar com inconsistências e ruídos nos dados:
 
 \begin{VerbatimWithBreaks}
-Valores Ausentes:  A remoção de registros com valores ausentes na coluna text (menos de 1%) minimizou o impacto desses dados incompletos.
+Valores Ausentes:  A remoção de registros com valores ausentes na coluna text (menos de 1\%) minimizou o impacto desses dados incompletos.
 Detecção de Idioma:  O uso do modelo FastText para identificar idiomas foi eficaz, mas algumas postagens classificadas como "unknown" foram excluídas. Isso garantiu que apenas postagens em inglês fossem analisadas, alinhando-se ao escopo do projeto.
 Limpeza de Texto:  A remoção de URLs, menções, hashtags e caracteres especiais foi crucial para eliminar ruído e focar no conteúdo relevante.
 Padronização Temporal:  A conversão das datas para o fuso horário de São Paulo permitiu uma análise temporal consistente, especialmente para entender o comportamento dos usuários locais.
@@ -1157,7 +1141,6 @@ técnicas mais avançadas de NLP e na criação de visualizações
 interativas. Futuras análises poderiam explorar essas oportunidades para
 aprimorar ainda mais os resultados e expandir o escopo do projeto.
 
-
-
+\printindex
 
 \end{document}

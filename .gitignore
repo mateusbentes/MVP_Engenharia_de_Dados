@@ -2,10 +2,14 @@
 *.log
 *.tmp
 MVP_Engenharia_de_Dados.pyg
+MVP_Engenharia_de_Dados.idx
+MVP_Engenharia_de_Dados.ind
+MVP_Engenharia_de_Dados.ilg
 __pycache__/
 .ipynb_checkpoints/
 .quarto/xref
 .quarto/xref/
+q.log
 MVP_Engenharia_de_Dados.aux
 MVP_Engenharia_de_Dados.log
 MVP_Engenharia_de_Dados_files

@@ -63,17 +63,52 @@ quarto render MVP_Engenharia_de_Dados.ipynb --to latex
 
 	- Quebras de linha em blocos de código ou texto longo.
 	
-	- Formatação de caracteres especiais (ex.: subtraços _, cifrões $, etc.).
+	- Formatação de caracteres especiais (ex.: subtraços _, porcentagem %, cifrões $ , etc.).
 	
 	- Alinhamento de tabelas ou figuras.
+	
+	- Adição de índice remissivo: 
+
+	- Marque os termos importantes com \index{}. Por exemplo: 
+	```
+	\section{Objetivo \index{Objetivo}}
+	``` 
+ 
+	- Certifique-se de carregar o pacote makeidx no preâmbulo:
+
+	```
+	\usepackage{makeidx}
+	\makeindex
+	``` 
+ 
+	- Insira o comando \printindex no local onde o índice deve aparecer (geralmente no final do documento).
 
 - Adicione pacotes LaTeX ou ajustes no preâmbulo, se necessário, para melhorar a formatação.
+
+- Compile o arquivo .tex para gerar o PDF temporário:
+
+```
+pdflatex MVP_Engenharia_de_Dados.tex
+```         
+
+- Compile o index.
+
+```
+makeindex MVP_Engenharia_de_Dados.idx
+```
+
+	- O comando makeindex gera os arquivos:
+
+        	- MVP_Engenharia_de_Dados.ind: Contém o índice formatado.
+        	- MVP_Engenharia_de_Dados.ilg: Contém logs e mensagens de erro (útil para depuração).
 
 - Compile o arquivo .tex para gerar o PDF final:
 
 ```
-xelatex MVP_Engenharia_de_Dados.tex
+pdflatex MVP_Engenharia_de_Dados.tex
 ```         
+
+    - Para garantir que todas as referências cruzadas, índices e tabelas estejam corretamente atualizadas, compile o arquivo .tex pelo menos duas vezes após o uso do makeindex.
 
 ### Observações Importantes
 
