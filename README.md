@@ -83,7 +83,32 @@ quarto render MVP_Engenharia_de_Dados.ipynb --to latex
  
 	- Insira o comando \printindex no local onde o índice deve aparecer (geralmente no final do documento).
 
-- Adicione pacotes LaTeX ou ajustes no preâmbulo, se necessário, para melhorar a formatação.
+- Adicione as figuras em Evidências:  
+
+	- Para incluir figuras no documento, use o ambiente figure e o comando \includegraphics. Certifique-se de que as imagens estejam na mesma pasta do arquivo .tex ou em uma subpasta (ex.: images/).
+
+	-Exemplo de inclusão de figura:
+
+	``` 
+	\begin{figure}[htbp]
+	    \centering
+	    \includegraphics[width=0.8\textwidth]{evidencias/evidenciaX.png}
+	    \caption{Descrição da imagem.}
+	    \label{fig:imagem-exemplo}
+	\end{figure}
+	```
+ 
+- Ajuste o tamanho da imagem usando a opção width (ex.: width=0.5\textwidth para 50% da largura do texto).
+
+- Adicione pacotes LaTeX ou ajustes no preâmbulo, se necessário, para melhorar a formatação:  
+
+	- Certifique-se de carregar o pacote graphicx no preâmbulo para suporte a imagens:
+
+	```
+	\usepackage{graphicx}
+	```
+
+	- Se necessário, ajuste outros pacotes ou configurações no preâmbulo para melhorar a formatação geral do documento.
 
 - Compile o arquivo .tex para gerar o PDF temporário:
 
